@@ -1,0 +1,23 @@
+
+<div id="np-posts">
+{{#posts}}
+<div class="np-post bx">
+    <div class="la"></div><div class="ra"></div><div class="lb"></div><div class="rb"></div>
+    <h2 class="h2">
+        <span>{{draft}}</span>
+        <em><a href="/article/{{_id}}/{{title}}/" title="{{title}}">{{title}}</a></em>
+        <span id="{{_id}}" class="np-post-info r"><cite class="np-post-date np-hide">{{published}}</cite></span>
+    </h2>
+    <div class="h2_c">
+        <div class="cl np-post-content">
+            {{&content}}
+        </div>
+        <div class="cr np-post-tags">
+            {{#tags}}
+            <a href="#" title="{{name}}" class="np-post-tag">{{name}}</a><br />
+            {{/tags}}
+        </div>
+    </div>
+</div>
+{{/posts}}
+</div>

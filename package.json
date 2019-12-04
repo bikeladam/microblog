@@ -1,0 +1,25 @@
+{
+    "name": "nodepress",
+    "description": "A nodejs micro-blog engine",
+    "version": "0.3.1",
+    "main": "./index.js",
+    "dependencies": {
+        "@gradealabs/genji": "^1.0.53",
+        "@launchfort/genji": "^1.0.6",
+        "bson-ext": "^2.0.3",
+        "formidable": "1.0.2",
+        "genji": "0.2.x",
+        "link": "^0.1.5",
+        "mongodb": "^3.3.5",
+        "mongodb-async": "0.1.2",
+        "mongodb-extjson": "^2.1.2",
+        "mongoose": "^5.7.13",
+        "node-markdown": "0.1.0",
+        "nunz": "0.2.0",
+        "snappy": "^6.2.3",
+        "uglify-js": "1.0.6"
+    },
+    "engines": {
+        "node": ">= 0.4.8"
+    }
+}

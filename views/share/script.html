@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{#scripts}}
     {{&js}}
 {{/scripts}}
@@ -15,4 +16,23 @@
 
         //{{& initJs}};
     });
+=======
+{{#scripts}}
+    {{&js}}
+{{/scripts}}
+
+<script type="text/javascript" language="javascript">
+    (window.head ? head.ready : $)(function() {
+        $.np.cookieName = '{{cookieName}}';
+        $.np.postsCount = parseInt('{{postsCount}}', 10);
+        $.np.page = '{{page}}';
+        $.np.postTpl = '{{&postTpl}}';
+
+        //{{#is_owner}}
+            //{{& .initUserJs}};
+        //{{/is_owner}}
+
+        //{{& initJs}};
+    });
+>>>>>>> 1cab6b0d99a1efd47c952fd7c52a0f48dbc6ca8d
 </script>

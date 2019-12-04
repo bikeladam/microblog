@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{#is_owner}}
 <div id="np-toolbar" class="np-toolbar">
     <ul id="np-tabs" class="np-tabs">
@@ -32,4 +33,40 @@
         <button id="np-save-setting">Save setting</button>
     </div>
 </div>
+=======
+{{#is_owner}}
+<div id="np-toolbar" class="np-toolbar">
+    <ul id="np-tabs" class="np-tabs">
+        <li><a id="np-tab-comments" href="#np-toolbar-comments">Recent comments</a></li>
+        <li><a id="np-tab-editor" href="#np-toolbar-editor">New post</a></li>
+        <li><a id="np-tab-trackers" href="#np-toolbar-trackers">Tracker</a></li>
+        <li><a id="np-tab-settings" href="#np-toolbar-settings">Settings</a></li>
+    </ul>
+    <div id="np-toolbar-comments" class="np-full-width np-tab">
+        <p>Here you can see the lastest comments on your blog</p>
+    </div>
+    <div id="np-toolbar-editor" class="np-full-width np-tab">
+        <div class="np-editor l">
+            <input id="np-title"></input>
+            <textarea id="np-textarea" class="np-full-width" rows="25"></textarea>
+            <input id="np-tags"></input>
+        </div>
+        <div class="np-editor r">
+            <div id="np-preview"></div>
+            <button id="np-editor-save">Save</button>
+            <button id="np-editor-publish">Publish</button>
+            <button id="np-editor-cancel">Cancel</button>
+        </div>
+    </div>
+    <div id="np-toolbar-trackers" class="np-full-width np-tab">
+        <textarea id="np-tracker" class="np-full-width" rows="10"></textarea>
+        <button id="np-save-tracker">Save tracker</button>
+    </div>
+    <div id="np-toolbar-settings" class="np-full-width np-tab">
+        <label>Site name: </label><input id="np-siteTitle" size="20" value="{{.title}}"></input><br>
+        <label>Site intro: </label><input id="np-siteIntro" size="20" value="{{.intro}}"></input>
+        <button id="np-save-setting">Save setting</button>
+    </div>
+</div>
+>>>>>>> 1cab6b0d99a1efd47c952fd7c52a0f48dbc6ca8d
 {{/is_owner}}

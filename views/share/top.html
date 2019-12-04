@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div class="w top">
     <div class="l"><a href="/" title="{{title}}"><img src="{{staticUrl}}images/logo.gif" alt="{{title}}" />{{title}}</a></div>
@@ -14,4 +15,22 @@
         </form>
         {{/is_owner}}
     </div>
+=======
+
+<div class="w top">
+    <div class="l"><a href="/" title="{{title}}"><img src="{{staticUrl}}images/logo.gif" alt="{{title}}" />{{title}}</a></div>
+    <div class="r">
+        {{#is_owner}}
+         <div class="wel">Welcome, {{name}} &nbsp;&nbsp;<a id="np-signout" href="#signout" title="Sign out" class="inb">Sign out</a></div>
+        {{/is_owner}}
+        {{^is_owner}}
+        <form id="np-login-form" method="post" action="" name="">
+            <label for="">Username: </label><input type="text" id="np-username" name="username" class="txt" />
+            <label for="">Password:</label><input type="password" id="np-password" name="password" class="txt" />
+            <input id="np-signin" value="Sign in" class="hand" />
+<!--            <a href="#" title="Register" target="_blank" class="inb">Register</a>-->
+        </form>
+        {{/is_owner}}
+    </div>
+>>>>>>> 1cab6b0d99a1efd47c952fd7c52a0f48dbc6ca8d
 </div>

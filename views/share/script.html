@@ -1,0 +1,18 @@
+{{#scripts}}
+    {{&js}}
+{{/scripts}}
+
+<script type="text/javascript" language="javascript">
+    (window.head ? head.ready : $)(function() {
+        $.np.cookieName = '{{cookieName}}';
+        $.np.postsCount = parseInt('{{postsCount}}', 10);
+        $.np.page = '{{page}}';
+        $.np.postTpl = '{{&postTpl}}';
+
+        //{{#is_owner}}
+            //{{& .initUserJs}};
+        //{{/is_owner}}
+
+        //{{& initJs}};
+    });
+</script>
